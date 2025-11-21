@@ -14,14 +14,29 @@
 
 body{
     /*set margins of sides of body */
-    margin: 0 4rem 0 4rem;
+    margin: 0 2rem 1rem 2rem;
+    padding-top:2rem;
     /* set up main colors background and font */
     background-color: var(--primary);
     color: var(--font-dark);
+
 }
+/*set the page to be grid, this one is 3 column grid */
+.page-wrapper {
+    display:grid;
+    gap:1rem;
+    grid-template-columns: 1fr 2fr 1fr;
+
+
+}
+#zen-intro {
+    padding: 0 1rem;
+    background-color:var(--secondary);
+}
+
 /* change link default color, might change to a different variable later */
 a:link {
-    color:var(--secondary);
+    color:var(--font-dark);
 }
 /* when you click a link it will be the accent color */
 a:active {
@@ -34,9 +49,24 @@ a:hover{
 
 /*color set after visiting a link */
 a:visited{
-    color:var(--secondary);
+    color:var(--font-dark);
 }
-/* center the h1 'css zen garden, i just like this centered */
-h1 {
+/* center the header - i just like this centered */
+header {
     text-align: center;
+}
+/*align the mini section headers and give them a bottom border to visually separate */
+h3 {
+    text-align:center;
+    border-bottom:var(--font-dark) 1px solid;
+}
+/*it took me forever to find the correct thing to select, but gets rid of the dots on the list of designs */
+.sidebar ul{
+    list-style-type:none;
+}
+
+.sidebar{
+    /*center text in the sidebar*/
+    text-align: center;
+    background-color: var(--secondary);
 }
