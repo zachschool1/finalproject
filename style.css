@@ -11,3 +11,32 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    /*set margins of sides of body */
+    margin: 0 4rem 0 4rem;
+    /* set up main colors background and font */
+    background-color: var(--primary);
+    color: var(--font-dark);
+}
+/* change link default color, might change to a different variable later */
+a:link {
+    color:var(--secondary);
+}
+/* when you click a link it will be the accent color */
+a:active {
+    color: var(--accent);
+}
+/* when you hover a link it is the dark color */
+a:hover{
+    color:var(--font-light);
+}
+
+/*color set after visiting a link */
+a:visited{
+    color:var(--secondary);
+}
+/* center the h1 'css zen garden, i just like this centered */
+h1 {
+    text-align: center;
+}
