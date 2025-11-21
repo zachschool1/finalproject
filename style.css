@@ -1,0 +1,13 @@
+/* these are CSS Variables for a color scheme i generated on https://coolors.co/dabfff-907ad6-4f518c-2c2a4a-7fdeff */
+:root {
+    --primary: #DABFFF;
+    --secondary: #907AD6;
+    --font-light:#4F518C;
+    --font-dark:#2C2A4A;
+    --accent:#7FDEFF;
+}
+/* make everything have 0 margin and padding to make things more uniform and easier to edit */
+*{
+    margin: 0;
+    padding: 0;
+}
