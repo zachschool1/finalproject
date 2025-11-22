@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     /* change font family */
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -28,8 +28,6 @@ body{
     display:grid;
     gap:1rem;
     grid-template-columns: 1fr 2fr 1fr;
-
-
 }
 #zen-intro {
     padding: 0 1rem;
