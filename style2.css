@@ -1,4 +1,4 @@
-/* these are CSS Variables for a color scheme i generated on https://coolors.co/dabfff-907ad6-4f518c-2c2a4a-7fdeff */
+/* these are CSS Variables for a color scheme i generated on https://coolors.co/ */
 :root {
     --primary: #A7D49B;
     --secondary: #92AC86;
@@ -12,6 +12,7 @@
     padding: 0;
     /* change font family */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 body{
@@ -23,6 +24,9 @@ body{
     color: var(--font-dark);
 }
 
+#zen-summary{
+    text-align:center;
+}
 /* change link default color,copied same structure as style1 */
 a:link {
     color:var(--font-dark);
@@ -47,6 +51,7 @@ header {
     border-bottom: 1px solid var(--accent);
     padding: 1rem 0;
     margin: 0 0 1rem 0;
+    background-color: var(--secondary);
 }
 footer{
     text-align:center;
@@ -61,7 +66,10 @@ h2 {
     flex-direction: column;
 }
 
-
+p {
+    /*add a gap between all of the paragraphs*/
+    margin-bottom:1rem;
+}
 .wrapper {
     display:flex;
     justify-content: space-evenly;
@@ -75,6 +83,7 @@ h3::first-letter {
     font-style:italic;
 
 }
+
 
 .sidebar ul{
     list-style-type: square;

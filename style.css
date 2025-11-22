@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     /* change font family */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -64,10 +64,15 @@ h3 {
 .sidebar ul{
     list-style-type:none;
 }
-
+footer{
+    text-align: center;
+}
 .sidebar{
     /*center text in the sidebar*/
     text-align: center;
     background-color: var(--secondary);
 }
-
+/*add an indent to the text to show separation of paragraphs*/
+p {
+    text-indent: 2em;
+}
