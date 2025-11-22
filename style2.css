@@ -1,0 +1,69 @@
+/* these are CSS Variables for a color scheme i generated on https://coolors.co/dabfff-907ad6-4f518c-2c2a4a-7fdeff */
+:root {
+    --primary: #A7D49B;
+    --secondary: #92AC86;
+    --font-light:#696047;
+    --font-dark:#55251D;
+    --accent:#5A1807;
+}
+/* make everything have 0 margin and padding to make things more uniform and easier to edit */
+*{
+    margin: 0;
+    padding: 0;
+    /* change font family */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    /*set margins of sides of body */
+    margin: 0 2rem 1rem 2rem;
+    padding-top:2rem;
+    /* set up main colors background and font */
+    background-color: var(--primary);
+    color: var(--font-dark);
+}
+
+/* change link default color,copied same structure as style1 */
+a:link {
+    color:var(--font-dark);
+}
+/* when you click a link it will be the accent color */
+a:active {
+    color: var(--accent);
+}
+/* when you hover a link it is the dark color */
+a:hover{
+    color:var(--font-light);
+}
+
+/*color set after visiting a link */
+a:visited{
+    color:var(--font-dark);
+}
+
+header {
+    /* give the header some space and a border bottom with space around that and center text*/
+    text-align: center;
+    border-bottom: 1px solid var(--accent);
+    padding: 1rem 0;
+    margin: 0 0 1rem 0;
+}
+
+h2 {
+    font-style:oblique
+}
+.page-wrapper {
+    display:flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display:flex;
+    justify-content: space-evenly;
+    margin:1rem 3rem;
+    background-color: var(--secondary);
+}
+
+.sidebar ul{
+    list-style-type: square;
+}
