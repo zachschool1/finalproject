@@ -16,7 +16,7 @@
 
 body{
     /*set margins of sides of body */
-    margin: 0 2rem 1rem 2rem;
+    margin: 0 1rem 1rem 1rem;
     padding-top:2rem;
     /* set up main colors background and font */
     background-color: var(--primary);
@@ -27,11 +27,14 @@ body{
 .page-wrapper {
     display:grid;
     gap:1rem;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 #zen-intro {
     padding: 0 1rem;
     background-color:var(--secondary);
+    grid-row: 1;
+    grid-column: 1 / span 3;
 }
 
 /* change link default color, might change to a different variable later */
